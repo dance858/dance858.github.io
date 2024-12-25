@@ -9,52 +9,75 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f9;
+            background-color: #ffffff;
             color: #333;
         }
-        header {
-            text-align: center;
+        img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
         }
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
         section {
-            max-width: 800px;
-            margin: 20px;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
         }
         h2 {
             color: #444;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #444;
+            display: inline-block;
         }
         ul {
             padding-left: 20px;
+            margin: 0;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="bild.jpg" alt="Your Picture">
+    <img src="your-photo.jpg" alt="Your Picture">
+    <main>
         <h1>Daniel's Academic Page</h1>
-    </header>
-    <section>
-        <h2>About</h2>
-        <p> XXX</p>
-    </section>
-    <section>
-        <h2>Publications</h2>
-        <ul>
-            <li><strong>Title:</strong> Your Paper Title <br> <em>Conference/Journal Name, Year</em></li>
-            <!-- Add more publications as needed -->
-        </ul>
-    </section>
+        <section>
+            <h2>About</h2>
+            <p>I'm a PhD student researching robust factor models and high-dimensional data analysis. My work focuses on statistical methods and optimization techniques.</p>
+        </section>
+        <section>
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    <strong>Title:</strong> Your Paper Title <br>
+                    <em>Conference/Journal Name, Year</em> <br>
+                    <a href="link-to-paper" target="_blank">📄 Paper</a> | 
+                    <a href="link-to-code" target="_blank">💻 Code</a>
+                </li>
+                <!-- Add more publications as needed -->
+                <li>
+                    <strong>Title:</strong> Another Paper Title <br>
+                    <em>Conference/Journal Name, Year</em> <br>
+                    <a href="another-link-to-paper" target="_blank">📄 Paper</a> | 
+                    <a href="another-link-to-code" target="_blank">💻 Code</a>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
