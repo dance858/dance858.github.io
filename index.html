@@ -3,62 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Cederberg's Academic Page</title>
+    <title>Daniel's Academic Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
         }
-        header .text {
+        img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+        }
+        h1 {
             text-align: center;
-            margin-right: 20px;
-        }
-        header h1 {
             margin: 0;
             font-size: 2em;
-            color: #444;
         }
-        header h2 {
-            margin: 5px 0 0 0;
-            font-size: 1.2em;
+        h3 {
+            text-align: center;
+            margin: 10px 0 20px 0;
             color: #666;
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: normal;
         }
         h2 {
             color: #444;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #444;
+            display: inline-block;
         }
         ul {
             padding-left: 20px;
+            margin: 0;
         }
         a {
-            color: #007BFF;
+            color: #0066cc;
             text-decoration: none;
         }
         a:hover {
@@ -67,13 +53,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="text">
-            <h1>Daniel Cederberg</h1>
-            <h2>PhD Student, Electrical Engineering, Stanford University</h2>
-        </div>
-        <img src="your-photo.jpg" alt="Daniel's Picture">
-    </header>
+    <img src="your-photo.jpg" alt="Your Picture">
+    <h1>Daniel's Academic Page</h1>
+    <h3>Researching robust factor models and high-dimensional data analysis</h3>
     <section>
         <h2>About</h2>
         <p>I'm a PhD student researching robust factor models and high-dimensional data analysis. My work focuses on statistical methods and optimization techniques.</p>
@@ -88,6 +70,12 @@
                 <a href="link-to-code" target="_blank">💻 Code</a>
             </li>
             <!-- Add more publications as needed -->
+            <li>
+                <strong>Title:</strong> Another Paper Title <br>
+                <em>Conference/Journal Name, Year</em> <br>
+                <a href="another-link-to-paper" target="_blank">📄 Paper</a> | 
+                <a href="another-link-to-code" target="_blank">💻 Code</a>
+            </li>
         </ul>
     </section>
 </body>
