@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var mathElements = document.getElementsByClassName("math");
             for (var i = 0; i < mathElements.length; i++) {
                 katex.render(mathElements[i].textContent, mathElements[i], {
@@ -23,7 +24,7 @@
         var context = canvas.getContext('2d');
         context.font = '48px serif';
         context.fillText('D', 8, 48);
-        
+
         var link = document.createElement('link');
         link.type = 'image/x-icon';
         link.rel = 'icon';
@@ -39,10 +40,12 @@
             background-color: #fff;
             color: #333;
         }
+
         header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start; /* Align items at the start to make the text and image stack properly */
+            align-items: flex-start;
+            /* Align items at the start to make the text and image stack properly */
             margin-top: 5rem;
             margin-bottom: 3rem;
             max-width: 18cm;
@@ -52,7 +55,8 @@
         .header-text {
             display: flex;
             margin-top: 1.5rem;
-            flex-direction: column; /* Stack the header title and the PhD text vertically */
+            flex-direction: column;
+            /* Stack the header title and the PhD text vertically */
         }
 
         header h1 {
@@ -62,7 +66,8 @@
         }
 
         header .sub-header {
-            margin-top: 10px; /* Adjust spacing between the title and the PhD text */
+            margin-top: 10px;
+            /* Adjust spacing between the title and the PhD text */
             font-size: 1.2rem;
             color: #333;
         }
@@ -75,132 +80,163 @@
 
         nav {
             margin-bottom: 1.5rem;
-            max-width: 18cm; /* Limiting nav width */
+            max-width: 18cm;
+            /* Limiting nav width */
             margin: 0 auto;
         }
+
         nav ul {
             list-style-type: none;
             padding: 0;
             margin-top: 2rem;
         }
+
         nav ul li {
             display: inline-block;
             margin-right: 1rem;
             padding-bottom: 20px;
         }
+
         nav ul li a {
             text-decoration: none;
             color: #007BFF;
             font-weight: bold;
         }
+
         nav ul li a:hover {
             text-decoration: underline;
         }
+
         main {
-            max-width: 18cm; /* Limits the content width to approximately 16cm */
+            max-width: 18cm;
+            /* Limits the content width to approximately 16cm */
             margin: 0 auto;
         }
+
         section {
             margin-bottom: 2rem;
         }
+
         section#about {
-            margin-top: 3rem; /* Adding extra whitespace above the About section */
+            margin-top: 3rem;
+            /* Adding extra whitespace above the About section */
         }
+
         section h1 {
             font-size: 1.8rem;
             margin-top: 1rem;
         }
-        section p, ul {
+
+        section p,
+        ul {
             font-size: 1rem;
             margin-bottom: 1rem;
         }
+
         a {
             color: #007BFF;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         @media (max-width: 600px) {
             .profile-pic {
                 max-width: 100px;
             }
+
             header .sub-header {
                 font-size: 1rem;
             }
+
             .header-text {
                 margin-top: 0.5rem;
             }
         }
+
         .external-link::after {
-            content: "\2197"; /* Unicode for "↗" */
-            font-size: 0.6em; /* Make it smaller */
-            vertical-align: super; /* Position it as superscript */
-            margin-left: 3px; /* Add a little space between the link and the icon */
+            content: "\2197";
+            /* Unicode for "↗" */
+            font-size: 0.6em;
+            /* Make it smaller */
+            vertical-align: super;
+            /* Position it as superscript */
+            margin-left: 3px;
+            /* Add a little space between the link and the icon */
         }
+
         #endofnav-item {
-            padding-right: 50px; /* Adjust the padding as needed */
+            padding-right: 50px;
+            /* Adjust the padding as needed */
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <div class="header-text">
-        <h1>Daniel Cederberg</h1>
-        <p class="sub-header">PhD Student, Electrical Engineering, Stanford University</p>
-    </div>
-    <img src="face.jpg" alt="Daniel Cederberg's Headshot" class="profile-pic">
-</header>
+    <header>
+        <div class="header-text">
+            <h1>Daniel Cederberg</h1>
+            <p class="sub-header">PhD Student, Electrical Engineering, Stanford University</p>
+        </div>
+        <img src="face.jpg" alt="Daniel Cederberg's Headshot" class="profile-pic">
+    </header>
 
 
 
-<main>
+    <main>
 
-    <nav>
-        <ul>
-            <li><a href="mailto:dance858@stanford.edu"  class="external-link">Email me</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="mailto:dance858@stanford.edu" class="external-link">Email me</a></li>
+            </ul>
+        </nav>
 
-    <section id="about">
-        <h1>About</h1>
-        <p> I am a second-year PhD student in the Department of Electrical Engineering at Stanford University,
-            advised by <a href="https://web.stanford.edu/~boyd/" target="_blank">Stephen Boyd</a>.
-            Prior to joining Stanford, I received a BSc in Physics and an MSc in Applied Mathematics,
-            both from Linköping University, Sweden. My research focuses on developing software and algorithms for solving optimization problems.
-        </p>
-    </section>
+        <section id="about">
+            <h1>About</h1>
+            <p> I am a second-year PhD student in the Department of Electrical Engineering at Stanford University,
+                advised by <a href="https://web.stanford.edu/~boyd/" target="_blank">Stephen Boyd</a>.
+                Prior to joining Stanford, I received a BSc in Physics and an MSc in Applied Mathematics,
+                both from Linköping University, Sweden. My research focuses on developing software and algorithms for
+                solving optimization problems.
+            </p>
+        </section>
 
-    <section>
+        <section>
             <h2>Publications</h2>
             <ul>
+                <li> D. Cederberg, X. Wu, S. Boyd, M. Johansson. An Asynchronous Bundle Method for Distributed Learning Problems
+                    <em>Accepted for the International Conference on Learning Representations (ICLR)</em>, 2025. <br>
+                </li>
                 <li> D. Cederberg, E. Larsson, M. Johansson. FABLE: a bundle method for federated le-
                     arning in wireless systems.
-                    <em>IEEE International Conference on Acoustics,
+                    <em>Accepted for the IEEE International Conference on Acoustics,
                         Speech, and Signal Processing (ICASSP)</em>, 2025. <br>
-                   <a href="another-link-to-paper" target="_blank">📄 Paper</a> | 
-                   <a href="another-link-to-code" target="_blank">💻 Code</a>
-               </li>
+                </li>
                 <li> D. Cederberg, First-order Methods for Nonnegative Trigonometric Matrix Polynomials.
-                    <em>Journal of Optimization Theory and Applications</em>, 2024. <br>
-                   <a href="another-link-to-paper" target="_blank">📄 Paper</a> | 
-                   <a href="another-link-to-code" target="_blank">💻 Code</a>
-                   <a href="another-link-to-code" target="_blank">📊 Slides</a>
-               </li>
+                    <em>Journal of Optimization Theory and Applications</em>, 2025. <br>
+                    <a href="https://doi.org/10.1007/s10957-024-02581-5" target="_blank">📄 Paper</a> |
+                    <a href="https://github.com/dance858/BregmanProx" target="_blank">💻 Code</a>
+                    <a href="another-link-to-code" target="_blank">📊 Slides</a>
+                </li>
                 <li> D. Cederberg, Toeplitz covariance estimation with applications to MUSIC.
                     <em>Journal of Signal Processing</em>, 2024. <br>
-                   <a href="another-link-to-paper" target="_blank">📄 Paper</a> | 
-                   <a href="another-link-to-code" target="_blank">💻 Code</a>
-               </li>
-               <li> D. Cederberg, A. Hansson, A. Rantzer, Synthesis of Minimax Adaptive Controller for a Finite Set of Linear Systems.
-                     <em>IEEE Conference on Decision and Control</em>, 2022. <br>
-                    <a href="another-link-to-paper" target="_blank">📄 Paper</a> | 
-                    <a href="another-link-to-code" target="_blank">💻 Code</a>
+                    <a href="https://doi.org/10.1016/j.sigpro.2024.109506" target="_blank">📄 Paper</a> |
+                    <a href="https://github.com/dance858/Toeplitz-covariance-estimation" target="_blank">💻 Code</a>
+                </li>
+                <li> D. Cederberg, A. Hansson, A. Rantzer, Synthesis of Minimax Adaptive Controller for a Finite Set of
+                    Linear Systems.
+                    <em>IEEE Conference on Decision and Control</em>, 2022. <br>
+                    <a href="https://doi.org/10.1109/CDC51059.2022.9993060" target="_blank">📄 Paper</a> |
+                    <a href="https://gitlab.liu.se/dance858/synthesis-
+                    of-minimax-adaptive-controller" target="_blank">💻 Code</a>
                 </li>
             </ul>
-    </section>
-</main>
+        </section>
+    </main>
 
 </body>
+
 </html>
