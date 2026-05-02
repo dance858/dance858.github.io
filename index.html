@@ -207,8 +207,13 @@
         <section>
             <h2>Publications</h2>
             <ul>
+                <li> D. Cederberg, S. Boyd. Presolving for GPU-Accelerated First-Order LP Solvers.
+                    <em>arXiv preprint arXiv:2604.23951</em>, 2026. <br>
+                    <a href="https://arxiv.org/html/2604.23951" target="_blank">📄 Paper</a> |
+                    <a href="https://github.com/dance858/PSLP" target="_blank">💻 Code</a> |
+                </li>
                 <li> D. Cederberg. Tyler's M-estimator Through the Lens of Convex-Concave Programming.
-                    <em>AISTATS</em>, 2026 (<strong>Spotlight</strong>). <br>
+                    <em>AISTATS</em>, 2026 (<em>Spotlight</em>). <br>
                     <a href="https://openreview.net/forum?id=HZ59ULzrqr" target="_blank">📄 Paper</a>
                 </li>
                 <li> D. Cederberg. Fitting a Robust Factor Model via Expectation-Maximization.
@@ -216,7 +221,7 @@
                     <a href="https://ieeexplore.ieee.org/document/11369424/" target="_blank">📄 Paper</a> |
                     <a href="https://github.com/dance858/T-Rex-EM" target="_blank">💻 Code</a>
                 </li>
-                <li> D. Cederberg, Stephen Boyd. Projections onto Spectral Matrix Cones.
+                <li> D. Cederberg, S. Boyd. Projections onto Spectral Matrix Cones.
                     <em>arXiv preprint arXiv:2511.01089</em>, 2025. <br>
                     <a href="https://arxiv.org/pdf/2511.01089" target="_blank">📄 Paper</a> |
                     <a href="https://github.com/dance858/SpectralSCSExperiments" target="_blank">💻 Code</a> |
@@ -256,15 +261,14 @@
 
         <section>
             <h2>Software</h2>
-            During my PhD, I have developed several software packages, most of them written in C &mdash; a skill that may soon
-            qualify as ancient knowledge in the age of LLMs.
+            During my PhD, I have developed several software packages, most of them written in C.
             <ul>
                 <li><a href="https://github.com/dance858/PSLP" target="_blank">PSLP</a>, a fast presolver for large-scale
-                    linear programs, used by Nvidia in its GPU-accelerated optimization solver <a href="https://github.com/NVIDIA/cuopt" target="_blank">cuOpt</a>, among others.</li>
+                    linear programs. PSLP is used by Nvidia in its GPU-accelerated optimization solver <a href="https://github.com/NVIDIA/cuopt" target="_blank">cuOpt</a>, among others.</li>
                 <li><a href="https://github.com/cvxgrp/DNLP" target="_blank">DNLP</a>, an extension of
                     <a href="https://github.com/cvxpy/cvxpy/" target="_blank">CVXPY</a> to (nonconvex) nonlinear programming.
                     This includes the development of the <a href="https://github.com/SparseDifferentiation/SparseDiffEngine" target="_blank">Sparse Differentiation engine</a>
-                    for efficiently computing sparse Jacobians and Hessians.</li>
+                    for efficiently computing sparse Jacobians and Hessians. DNLP is available in CVXPY version 1.9.0 and later.</li>
                 <li>Presumably the World's fastest algorithm for computing the maximum likelihood estimate of a
                     <a href="https://github.com/dance858/Toeplitz-covariance-estimation" target="_blank">Toeplitz covariance matrix</a>.</li>
             </ul>
